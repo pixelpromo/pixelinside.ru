@@ -72,20 +72,30 @@
     );
   }
 
-  /* Карусель выпусков в hero */
-  function renderHeroCard(ep) {
+  /* Свежий выпуск в hero + бегущая строка */
+  function renderHeroEpisode(ep) {
     const poster = ep.poster
       ? `<img class="hero-latest__img" src="${esc(ep.poster)}" alt="">`
       : `<div class="hero-latest__img hero-latest__img--fallback" aria-hidden="true">${pad(ep.num)}</div>`;
     return (
       `<a class="hero-latest__card" href="episodes/${esc(ep.slug)}.html">` +
-        `<div class="hero-latest__media">${poster}<span class="hero-latest__badge">ВЫП. ${pad(ep.num)}</span></div>` +
+        `<div class="hero-latest__media">${poster}<span class="hero-latest__badge">Свежий выпуск</span></div>` +
         `<div class="hero-latest__body">` +
-          `<div class="hero-latest__meta mono">${esc(ep.date)} · ${esc(ep.duration)}</div>` +
+          `<div class="hero-latest__meta mono">ВЫП. ${pad(ep.num)} · ${esc(ep.duration)}</div>` +
           `<h3 class="hero-latest__title">${esc(ep.title)}</h3>` +
           (ep.guest ? `<div class="hero-latest__guest">${esc(ep.guest)}${ep.role ? " — " + esc(ep.role) : ""}</div>` : "") +
           `<span class="hero-latest__cta">Смотреть выпуск →</span>` +
         `</div>` +
+      `</a>`
+    );
+  }
+
+  function renderTickerItem(ep) {
+    return (
+      `<a class="ticker__item" href="episodes/${esc(ep.slug)}.html">` +
+        `<span class="ticker__num">ВЫП. ${pad(ep.num)}</span>` +
+        `<span class="ticker__title">${esc(ep.title)}</span>` +
+        (ep.guest ? `<span class="ticker__guest">— ${esc(ep.guest)}</span>` : "") +
       `</a>`
     );
   }
@@ -108,27 +118,15 @@
     }
   }
 
-  const heroCar = $("[data-hero-carousel]");
-  if (heroCar && eps.length) {
-    const slides = eps.slice().reverse(); // свежие первыми
-    heroCar.innerHTML = slides
-      .map((ep, i) => `<div class="hero-slide${i === 0 ? " is-active" : ""}">${renderHeroCard(ep)}</div>`)
-      .join("");
-    const els = heroCar.querySelectorAll(".hero-slide");
-    let idx = 0;
-    let timer = null;
-    const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
-    const start = () => {
-      stop();
-      timer = setInterval(() => {
-        els[idx].classList.remove("is-active");
-        idx = (idx + 1) % els.length;
-        els[idx].classList.add("is-active");
-      }, 4000);
-    };
-    heroCar.addEventListener("mouseenter", stop);
-    heroCar.addEventListener("mouseleave", start);
-    start();
+  const heroEp = $("[data-hero-episode]");
+  if (heroEp && eps.length) {
+    heroEp.innerHTML = renderHeroEpisode(eps[eps.length - 1]);
+  }
+
+  const heroTicker = $("[data-hero-ticker]");
+  if (heroTicker && eps.length) {
+    const items = eps.slice().reverse().map(renderTickerItem).join("");
+    heroTicker.innerHTML = `<div class="hero-ticker__track">${items}${items}</div>`;
   }
 
   /* Страница выпуска */
