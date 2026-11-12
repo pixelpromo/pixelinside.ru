@@ -314,8 +314,7 @@ body::after {
 .ticker__item {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  white-space: nowrap;
+  gap: 14px;
   text-decoration: none;
 }
 .ticker__thumb {
@@ -332,14 +331,36 @@ body::after {
   display: flex; align-items: center; justify-content: center;
   font-family: var(--font-mono); font-size: 10px; color: var(--dim);
 }
+.ticker__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 360px;
+}
 .ticker__num {
   color: var(--accent);
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.08em;
+  white-space: nowrap;
 }
-.ticker__title { font-weight: 700; color: var(--text); font-size: 14px; }
-.ticker__guest { color: var(--dim); font-size: 14px; }
+.ticker__title {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.ticker__guest {
+  color: var(--dim);
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .ticker__item:hover .ticker__title { color: var(--accent); }
 @keyframes ticker-scroll {
   from { transform: translateX(0); }

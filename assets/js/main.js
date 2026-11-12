@@ -98,9 +98,11 @@
     return (
       `<a class="ticker__item" href="episodes/${esc(ep.slug)}.html">` +
         `<span class="ticker__thumb">${thumb}</span>` +
-        `<span class="ticker__num">ВЫП. ${pad(ep.num)}</span>` +
-        `<span class="ticker__title">${esc(ep.title)}</span>` +
-        (ep.guest ? `<span class="ticker__guest">— ${esc(ep.guest)}</span>` : "") +
+        `<span class="ticker__text">` +
+          `<span class="ticker__num">ВЫП. ${pad(ep.num)}</span>` +
+          `<span class="ticker__title">${esc(ep.title)}</span>` +
+          (ep.guest ? `<span class="ticker__guest">— ${esc(ep.guest)}</span>` : "") +
+        `</span>` +
       `</a>`
     );
   }
