@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b0b0f">
+  <title>Сайт работает. Зачем платить за поддержку? — Пиксель Инсайд</title>
+  <meta property="og:title" content="Сайт работает. Зачем платить за поддержку?">
+  <meta property="og:description" content="Сайт работает — зачем платить за его поддержку? Потому что «ничего не сломалось» и «сайт помогает бизнесу расти» — разные вещи. Но нужна ли каждому прое…">
+  <meta property="og:type" content="website">
+  <meta name="description" content="Сайт работает — зачем платить за его поддержку? Потому что «ничего не сломалось» и «сайт помогает бизнесу расти» — разные вещи. Но нужна ли каждому прое…">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"Сайт работает. Зачем платить за поддержку?","description":"Сайт работает — зачем платить за его поддержку? Потому что «ничего не сломалось» и «сайт помогает бизнесу расти» — разные вещи. Но нужна ли каждому проекту ежемесячная работа агентства или иногда достаточно разовых задач?","thumbnailUrl":"https://i.ytimg.com/vi/k2giobPJ9X0/maxresdefault.jpg","uploadDate":"2026-10-01","duration":"PT27M3S","embedUrl":"https://www.youtube.com/embed/k2giobPJ9X0"}</script>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Замени slug на реальный (должен совпадать с полем slug в assets/js/data.js) -->
+  <script>window.EPISODE_SLUG = "sajt-rabotaet-podderzhka";</script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header">
+      <a class="logo" href="../index.html" aria-label="Пиксель Инсайд — на главную">
+        <img class="logo__img" src="../assets/img/logo-inside.svg" alt="Пиксель Инсайд" width="34" height="34">
+        <span class="logo__text">ПИКСЕЛЬ <em>ИНСАЙД</em></span>
+      </a>
+      <nav class="nav" data-nav aria-label="Основная навигация">
+        <a href="../index.html#about">О подкасте</a>
+        <a href="../index.html#episodes">Выпуски</a>
+        <a href="../index.html#guest">Стать гостем</a>
+      </nav>
+      <div class="header__actions">
+        <a class="btn btn--ghost btn--sm" href="https://vkvideo.ru/playlist/-28867919_51581450" target="_blank" rel="noopener">VK Видео</a>
+        <a class="btn btn--ghost btn--sm" href="https://www.youtube.com/playlist?list=PLYbpMI2RbIFT_Ypv_3CT2xZS9EOxIs6-5" target="_blank" rel="noopener">YouTube</a>
+      </div>
+      <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="episode">
+    <div class="container">
+      <a class="back" href="../index.html#episodes">← Все выпуски</a>
+
+      <article class="episode__grid">
+        <div class="episode__media" data-ep-poster></div>
+        <div class="episode__body">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span> <span data-ep-num>Выпуск</span></p>
+          <h1 class="episode__title" data-ep-title></h1>
+          <p class="episode__guest"><strong data-ep-guest></strong> <span data-ep-role></span></p>
+          <div class="episode__meta mono">
+            <span data-ep-date></span>
+            <span data-ep-duration></span>
+          </div>
+          <div class="episode__actions">
+            <a class="btn btn--primary" data-ep-vk href="#" target="_blank" rel="noopener">▶ Смотреть во VK Видео</a>
+            <a class="btn btn--ghost" data-ep-youtube href="#" target="_blank" rel="noopener">Смотреть на YouTube</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="episode__content">
+        <section class="episode__block episode__block--wide">
+          <h2 class="episode__block-title">О выпуске</h2>
+          <div class="prose" data-ep-desc></div>
+        </section>
+        <section class="episode__block">
+          <h2 class="episode__block-title">Что внутри</h2>
+          <ul class="list-check" data-ep-inside></ul>
+        </section>
+        <section class="episode__block">
+          <h2 class="episode__block-title">Для кого</h2>
+          <p class="episode__forwhom" data-ep-forwhom></p>
+        </section>
+      </div>
+
+      <nav class="episode__nav" aria-label="Навигация по выпускам">
+        <a class="episode__nav-link" data-ep-prev href="#"><span class="arrow">←</span><span data-nav-title>Предыдущий выпуск</span></a>
+        <a class="episode__nav-link episode__nav-link--next" data-ep-next href="#"><span data-nav-title>Следующий выпуск</span><span class="arrow">→</span></a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <div class="footer__brand">
+        <a class="logo" href="../index.html" aria-label="Пиксель Инсайд — на главную">
+          <img class="logo__img" src="../assets/img/logo-inside.svg" alt="Пиксель Инсайд" width="34" height="34">
+          <span class="logo__text">ПИКСЕЛЬ <em>ИНСАЙД</em></span>
+        </a>
+        <p class="footer__tag">Экспертный подкаст о внутренней кухне digital-агентства на примере «Пиксель Плюс».</p>
+      </div>
+      <nav class="footer__nav" aria-label="Навигация в подвале">
+        <a href="../index.html#about">О подкасте</a>
+        <a href="../index.html#episodes">Выпуски</a>
+        <a href="../index.html#guest">Стать гостем</a>
+      </nav>
+      <nav class="footer__nav" aria-label="Платформы">
+        <a href="https://www.youtube.com/playlist?list=PLYbpMI2RbIFT_Ypv_3CT2xZS9EOxIs6-5" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://vkvideo.ru/playlist/-28867919_51581450" target="_blank" rel="noopener">VK Видео</a>
+      </nav>
+      <div class="footer__meta mono">
+        <p>© <span data-year></span> Пиксель Инсайд от Пиксель Плюс</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
