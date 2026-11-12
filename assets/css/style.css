@@ -318,9 +318,9 @@ body::after {
   text-decoration: none;
 }
 .ticker__thumb {
-  width: 96px;
-  height: 54px;
-  border-radius: 6px;
+  width: 160px;
+  height: 90px;
+  border-radius: 8px;
   overflow: hidden;
   flex-shrink: 0;
   border: 1px solid var(--line);
