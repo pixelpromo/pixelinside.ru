@@ -325,6 +325,19 @@ body::after {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
+
+/* Телевизионные цветные полосы (SMPTE) внизу hero */
+.hero__bars {
+  height: 8px;
+  background: linear-gradient(90deg,
+    #ececf1 0 14.28%,
+    #ffd23f 0 28.57%,
+    #38e1ff 0 42.85%,
+    #5bffa0 0 57.14%,
+    #ff3d8d 0 71.42%,
+    #cc0000 0 85.71%,
+    #3d5bff 0 100%);
+}
 .hero-latest__card {
   display: block;
   text-decoration: none;
