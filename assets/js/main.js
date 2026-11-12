@@ -107,14 +107,17 @@
     );
   }
 
-  function renderPodcastCard(ep) {
+  function renderPodcastCard(ep, i) {
     return (
-      `<a class="podcast-card" href="${esc(ep.watchUrl)}" target="_blank" rel="noopener">` +
-        `<span class="podcast-card__media">` +
-          `<img src="${esc(ep.thumb)}" alt="" loading="lazy">` +
-          (ep.duration ? `<span class="podcast-card__dur">${esc(ep.duration)}</span>` : "") +
-        `</span>` +
-        `<h3 class="podcast-card__title">${esc(ep.title)}</h3>` +
+      `<a class="card" href="${esc(ep.watchUrl)}" target="_blank" rel="noopener">` +
+        `<div class="card__media">` +
+          `<img class="card__poster-img" src="${esc(ep.thumb)}" alt="" loading="lazy">` +
+          `<span class="card__badge">ВЫП. ${pad(i + 1)}</span>` +
+        `</div>` +
+        `<div class="card__body">` +
+          (ep.duration ? `<div class="card__meta mono">${esc(ep.duration)}</div>` : "") +
+          `<h3 class="card__title">${esc(ep.title)}</h3>` +
+        `</div>` +
       `</a>`
     );
   }
@@ -150,7 +153,7 @@
 
   const podcastGrid = $("[data-podcast-episodes]");
   if (podcastGrid && ppEps.length) {
-    podcastGrid.innerHTML = ppEps.map(renderPodcastCard).join("");
+    podcastGrid.innerHTML = ppEps.map((ep, i) => renderPodcastCard(ep, i)).join("");
   }
 
   /* Страница выпуска */
