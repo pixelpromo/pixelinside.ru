@@ -260,4 +260,140 @@ window.PIXEL = {
     "forWhom": "Выпуск будет полезен владельцам сайтов, руководителям интернет-магазинов, маркетологам и менеджерам digital-проектов — всем, кто решает, как поддерживать сайт после запуска, какие задачи отдавать подрядчику и как оценивать пользу этой работы для бизнеса."
   }
 ]
+  ,
+  // «Пиксель Подкаст» — выпуски (ссылки на YouTube)
+  podcastEpisodes: [
+  {
+    "title": "GEO — это новая реальность? Как попасть в ответы нейросетей — Владимир Назаров",
+    "watchUrl": "https://www.youtube.com/watch?v=9gAG6XR704E",
+    "thumb": "https://i.ytimg.com/vi/9gAG6XR704E/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAffSXC00wFG8YeRRkJGpgv1oLGgA",
+    "duration": "57:00"
+  },
+  {
+    "title": "Как бизнесу попасть в ответы Алисы? Будущее поиска: GEO, Алиса AI и новая реальность SEO",
+    "watchUrl": "https://www.youtube.com/watch?v=KJm2YGYQ01U",
+    "thumb": "https://i.ytimg.com/vi/KJm2YGYQ01U/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAk42g5e2JYpFD_iyUfsjoKetd2mA",
+    "duration": "1:16:10"
+  },
+  {
+    "title": "С НУЛЯ до МИЛЛИАРДА: как запустить бизнес и НЕ слиться — Максим Спиридонов (ex. Нетология)",
+    "watchUrl": "https://www.youtube.com/watch?v=DGzBqX0G0s8",
+    "thumb": "https://i.ytimg.com/vi/DGzBqX0G0s8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAIgB44VORH4kymLnPS4CJn4YmaTQ",
+    "duration": "1:08:14"
+  },
+  {
+    "title": "Млрд на показах: как Hybrid с 0 строит международный бизнес из России — Дмитрий Чеклов",
+    "watchUrl": "https://www.youtube.com/watch?v=Z9VLqsE4oRk",
+    "thumb": "https://i.ytimg.com/vi/Z9VLqsE4oRk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCCToAlDNi89-vpRE90rBshrbgMNw",
+    "duration": "1:07:30"
+  },
+  {
+    "title": "Невероятная история роста бизнеса с 5 до 400 и от менеджера до CEO — Дарья Свистунова",
+    "watchUrl": "https://www.youtube.com/watch?v=dtLl0lhgYmI",
+    "thumb": "https://i.ytimg.com/vi/dtLl0lhgYmI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDEU-rK5eF-ROiF5vnOh9znxMYmXA",
+    "duration": "1:12:21"
+  },
+  {
+    "title": "Яндекс меняет правила игры⁉️ Михаил Сливинский про SEO, ИИ‑контент и накрутку ПФ",
+    "watchUrl": "https://www.youtube.com/watch?v=AbqU-GxAYs8",
+    "thumb": "https://i.ytimg.com/vi/AbqU-GxAYs8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAJlgCFa2cFRwFhVZ720qzYpSVnxg",
+    "duration": "1:08:58"
+  },
+  {
+    "title": "Как выбрать бизнес-идею и НЕ пожалеть — Аркадий Морейнис",
+    "watchUrl": "https://www.youtube.com/watch?v=JwY_3b5W_so",
+    "thumb": "https://i.ytimg.com/vi/JwY_3b5W_so/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBOwl7-f0G7qOjVV30uuUVJbvnc0g",
+    "duration": "1:15:21"
+  },
+  {
+    "title": "ИИ против SEO: кто победит и что делать бизнесу? — Игорь Хомяков",
+    "watchUrl": "https://www.youtube.com/watch?v=lJP1JCUa5RQ",
+    "thumb": "https://i.ytimg.com/vi/lJP1JCUa5RQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBk3b77G1jfznfExUowPBc-eeTi-A",
+    "duration": "57:00"
+  },
+  {
+    "title": "Ошибки, которые убивают конверсию: что не видит 90% бизнесов — Ильяна Левина",
+    "watchUrl": "https://www.youtube.com/watch?v=55-aE_h5hA8",
+    "thumb": "https://i.ytimg.com/vi/55-aE_h5hA8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDAlR5KhCyBVaEupCekmANlwmmJzA",
+    "duration": "1:04:08"
+  },
+  {
+    "title": "Максим Ильяхов: «на книгах не заработаешь, но я — да». ИИ = бухой второкурсник?",
+    "watchUrl": "https://www.youtube.com/watch?v=kTHUl-TdvIA",
+    "thumb": "https://i.ytimg.com/vi/kTHUl-TdvIA/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDNft-lQ90XOOw-w1_09bHjAFJLqQ",
+    "duration": "1:23:54"
+  },
+  {
+    "title": "Как страх сцены мешает личному бренду и росту бизнеса? Дмитрий Першин",
+    "watchUrl": "https://www.youtube.com/watch?v=a9OZKC-uNMg",
+    "thumb": "https://i.ytimg.com/vi/a9OZKC-uNMg/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDgzbRMGsT55_0UlA7dKuj2pEfA1Q",
+    "duration": "58:09"
+  },
+  {
+    "title": "Никита Прохоров: честно о репутации, отзывах и digital-бизнесе",
+    "watchUrl": "https://www.youtube.com/watch?v=LGUlN4kQ5HU",
+    "thumb": "https://i.ytimg.com/vi/LGUlN4kQ5HU/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBabgbPmsuP6NQ2OADEQGqC5xQCZw",
+    "duration": "59:57"
+  },
+  {
+    "title": "Сергей Панков: как устроен бизнес Sape — честно и по делу",
+    "watchUrl": "https://www.youtube.com/watch?v=DW6lAPayk4c",
+    "thumb": "https://i.ytimg.com/vi/DW6lAPayk4c/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDi2YvR26XWxdXsTvVdZX3Aba8OqQ",
+    "duration": "56:06"
+  },
+  {
+    "title": "Андрей Терехов: ЗАКРЫВАТЬ ли интернет-агентство в 2025? Что говорит BIG DATA",
+    "watchUrl": "https://www.youtube.com/watch?v=j5KwRyaCGCo",
+    "thumb": "https://i.ytimg.com/vi/j5KwRyaCGCo/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAyBIbQ7k3IsPLOhNqAPCX-5taxxw",
+    "duration": "59:39"
+  },
+  {
+    "title": "Евгений Чуранов: Как Расти из Регионов и Выстраивать Партнерства в Digital",
+    "watchUrl": "https://www.youtube.com/watch?v=UEyxorM9w5I",
+    "thumb": "https://i.ytimg.com/vi/UEyxorM9w5I/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB1sESHKPu_MdX0RzQDk1dwPCx4ww",
+    "duration": "55:28"
+  },
+  {
+    "title": "Александр Ожгибесов: Жёсткая Правда про SEO, Нейросети и Бизнес в Регионах",
+    "watchUrl": "https://www.youtube.com/watch?v=PNZJai5cJYQ",
+    "thumb": "https://i.ytimg.com/vi/PNZJai5cJYQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBuyDlHo0b92bYfMgH6D1nNChi_HQ",
+    "duration": "1:05:53"
+  },
+  {
+    "title": "Александр Борминцев: Как Вырасти до Миллиардов и Пережить Конец Яндекса",
+    "watchUrl": "https://www.youtube.com/watch?v=J9XHK_61-Q4",
+    "thumb": "https://i.ytimg.com/vi/J9XHK_61-Q4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDbbVkUUCmZnpeljNuQtG8mGf8aWw",
+    "duration": "58:49"
+  },
+  {
+    "title": "Артур Латыпов: от SEO-фрилансера до агентств, про рост, команду и партнёрство",
+    "watchUrl": "https://www.youtube.com/watch?v=nMcD_jkS0Ew",
+    "thumb": "https://i.ytimg.com/vi/nMcD_jkS0Ew/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBTb2ymauiuzMXzyGCoIncYXGneWQ",
+    "duration": "59:59"
+  },
+  {
+    "title": "Михаил Шакин: №1 в SEO по популярности, ЧЕСТНО о пути дальнобойщика в США",
+    "watchUrl": "https://www.youtube.com/watch?v=g-3Xw4Lm4tk",
+    "thumb": "https://i.ytimg.com/vi/g-3Xw4Lm4tk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAnOCLGN-waqffQm9vz_R3AxYBqOQ",
+    "duration": "1:14:30"
+  },
+  {
+    "title": "Алексей Чекушин ЧЕСТНО про деньги, накрутку ПФ, SEO и науку",
+    "watchUrl": "https://www.youtube.com/watch?v=WdLSU14eF-k",
+    "thumb": "https://i.ytimg.com/vi/WdLSU14eF-k/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBOiOnHcHk-BtPhapqJqgB9ztEtgw",
+    "duration": "59:11"
+  },
+  {
+    "title": "Антон Маркин ЧЕСТНО про свой путь: от мытья сортиров до SEO-секты",
+    "watchUrl": "https://www.youtube.com/watch?v=8zNjimcFKNc",
+    "thumb": "https://i.ytimg.com/vi/8zNjimcFKNc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDDnIdZJBQy4dEbihJQfkneijq7Mg",
+    "duration": "59:57"
+  },
+  {
+    "title": "Региональное SEO: как продвигать бизнес в городах до 500 тыс. человек",
+    "watchUrl": "https://www.youtube.com/watch?v=44qQ7VGYdEw",
+    "thumb": "https://i.ytimg.com/vi/44qQ7VGYdEw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBVjNRZHESeCKRYwH6QIQEUKYJCOA",
+    "duration": "59:19"
+  }
+]
 };

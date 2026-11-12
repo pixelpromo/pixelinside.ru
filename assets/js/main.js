@@ -3,6 +3,7 @@
   const P = window.PIXEL || {};
   const site = P.site || {};
   const eps = Array.isArray(P.episodes) ? P.episodes : [];
+  const ppEps = Array.isArray(P.podcastEpisodes) ? P.podcastEpisodes : [];
 
   const $ = (s, root) => (root || document).querySelector(s);
   const $$ = (s, root) => Array.from((root || document).querySelectorAll(s));
@@ -104,6 +105,18 @@
     );
   }
 
+  function renderPodcastCard(ep) {
+    return (
+      `<a class="podcast-card" href="${esc(ep.watchUrl)}" target="_blank" rel="noopener">` +
+        `<span class="podcast-card__media">` +
+          `<img src="${esc(ep.thumb)}" alt="" loading="lazy">` +
+          (ep.duration ? `<span class="podcast-card__dur">${esc(ep.duration)}</span>` : "") +
+        `</span>` +
+        `<h3 class="podcast-card__title">${esc(ep.title)}</h3>` +
+      `</a>`
+    );
+  }
+
   /* Сетка на главной */
   const grid = $("[data-episodes]");
   if (grid) {
@@ -131,6 +144,11 @@
   if (heroTicker && eps.length) {
     const items = eps.slice().reverse().map(renderTickerItem).join("");
     heroTicker.innerHTML = `<div class="hero-ticker__track">${items}${items}</div>`;
+  }
+
+  const podcastGrid = $("[data-podcast-episodes]");
+  if (podcastGrid && ppEps.length) {
+    podcastGrid.innerHTML = ppEps.map(renderPodcastCard).join("");
   }
 
   /* Страница выпуска */

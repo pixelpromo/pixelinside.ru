@@ -574,6 +574,32 @@ body::after {
 }
 .card__guest { margin-top: auto; color: var(--muted); font-size: 14px; }
 
+/* Блок «Пиксель Подкаст» */
+.podcast-about { max-width: 780px; margin-bottom: 40px; }
+.podcast-about p { color: var(--muted); margin-bottom: 14px; }
+.podcast-about p:first-child { color: var(--text); font-size: 19px; }
+.podcast-card { display: flex; flex-direction: column; gap: 10px; text-decoration: none; }
+.podcast-card__media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg-2);
+  transition: border-color 0.2s ease;
+}
+.podcast-card__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.podcast-card__dur {
+  position: absolute; right: 8px; bottom: 8px;
+  padding: 3px 7px; border-radius: 5px;
+  background: rgba(11, 11, 15, 0.82);
+  color: var(--text);
+  font-family: var(--font-mono); font-size: 11px;
+}
+.podcast-card__title { font-size: 15px; font-weight: 600; line-height: 1.35; color: var(--text); }
+.podcast-card:hover .podcast-card__media { border-color: var(--accent); }
+.podcast-card:hover .podcast-card__title { color: var(--accent); }
+
 .episodes-empty {
   grid-column: 1 / -1;
   text-align: center;
