@@ -151,9 +151,55 @@
     heroTicker.innerHTML = `<div class="hero-ticker__track">${items}${items}</div>`;
   }
 
-  const podcastGrid = $("[data-podcast-episodes]");
-  if (podcastGrid && ppEps.length) {
-    podcastGrid.innerHTML = ppEps.map((ep, i) => renderPodcastCard(ep, i)).join("");
+  const podSlider = $("[data-podcast-slider]");
+  if (podSlider && ppEps.length) {
+    const track = podSlider.querySelector("[data-podcast-track]");
+    const dotsEl = podSlider.querySelector("[data-podcast-dots]");
+    const prev = podSlider.querySelector("[data-podcast-prev]");
+    const next = podSlider.querySelector("[data-podcast-next]");
+    const perPage = () => (window.innerWidth <= 680 ? 1 : window.innerWidth <= 980 ? 2 : 3);
+    let pages = [];
+    let idx = 0;
+
+    const go = (i) => {
+      idx = Math.max(0, Math.min(pages.length - 1, i));
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      dotsEl.querySelectorAll("[data-page]").forEach((d) =>
+        d.classList.toggle("is-active", Number(d.dataset.page) === idx)
+      );
+      prev.disabled = idx === 0;
+      next.disabled = idx >= pages.length - 1;
+    };
+
+    const build = () => {
+      const n = perPage();
+      pages = [];
+      for (let i = 0; i < ppEps.length; i += n) pages.push(ppEps.slice(i, i + n));
+      track.innerHTML = pages
+        .map((page) => {
+          const start = ppEps.indexOf(page[0]);
+          return `<div class="slider__page">${page
+            .map((ep, k) => renderPodcastCard(ep, start + k))
+            .join("")}</div>`;
+        })
+        .join("");
+      dotsEl.innerHTML = pages
+        .map((_, i) => `<button class="slider__dot${i === 0 ? " is-active" : ""}" data-page="${i}" aria-label="Страница ${i + 1}"></button>`)
+        .join("");
+      idx = Math.min(idx, pages.length - 1);
+      go(idx);
+    };
+
+    prev.addEventListener("click", () => go(idx - 1));
+    next.addEventListener("click", () => go(idx + 1));
+    dotsEl.addEventListener("click", (e) => {
+      const b = e.target.closest("[data-page]");
+      if (b) go(Number(b.dataset.page));
+    });
+    let rto = null;
+    window.addEventListener("resize", () => { clearTimeout(rto); rto = setTimeout(build, 150); });
+
+    build();
   }
 
   /* Страница выпуска */
